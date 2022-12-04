@@ -19,17 +19,16 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__container">
-          <button type="submit" class="page-header__mobile-btn">
-            <svg width="24" height="23" class="page-header__logo-hamburger">
-              <use
-                class="page-header__icon"
-                href="images/icons.svg#icon-menu"
-              ></use>
-            </svg>
-          </button>
-
-          <div class="page-header__logo">
-            <div class="page-header__logo-label">
+          <div class="page-header__logo-label">
+            <button type="submit" class="page-header__mobile-btn">
+              <svg width="24" height="23" class="page-header__logo-hamburger">
+                <use
+                  class="page-header__icon"
+                  href="images/icons.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
+            <div class="page-header__logo">
               <a href="index.html" class="page-header__logo-link"
                 ><span class="page-header__logo-description">Web</span>
                 <span class="page-header__logo-description--second"
@@ -37,6 +36,7 @@
                 ></a
               >
             </div>
+
             <nav class="navigation">
               <ul class="navigation__menu">
                 <li
@@ -472,7 +472,7 @@
         </div>
       </section>
 
-      <section class="inner-section">
+      <section class="inner-section__clients">
         <div class="container">
           <div claas="clients">
             <h3 class="clients__head">Nasi Klienci</h3>
@@ -619,7 +619,7 @@
             </ul>
           </div>
           <form name="newsletter" autocomplete="off">
-            <label class="">
+            <label class="newsletter__label">
               <h5 class="newsletter__head">ZAPISZ SIĘ DO NEWSLETTERA</h5>
               <input
                 class="newsletter__input"
