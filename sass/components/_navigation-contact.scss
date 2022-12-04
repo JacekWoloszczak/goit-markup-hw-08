@@ -1,0 +1,93 @@
+.address-header {
+  display: flex;
+}
+.address-header__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0;
+}
+
+.address-header__list-envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-header__list-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-property: color;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-header .address-header__list-envelope .address-header__list-phone {
+  list-style-type: none;
+}
+
+.address-header__link-mail {
+  text-decoration: none;
+  color: #757575;
+}
+
+.address-header
+  .address-header__list-envelope:hover
+  .address-header__link-mail {
+  color: #2196f3;
+}
+
+.address-header__info
+  .address-header__list-envelope:hover
+  .address-header__icon-envelope {
+  fill: #2196f3;
+}
+
+.address-header__info
+  .address-header__list-phone:hover
+  .address-header__link-phone {
+  color: #2196f3;
+}
+
+.address-header__info
+  .address-header__list-phone:hover:hover
+  .address-header__icon-phone {
+  fill: #2196f3;
+}
+
+.address-header__link-phone {
+  text-decoration: none;
+  color: #757575;
+}
+.address-header__svg-envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.address-header__svg-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.address-header__icon-envelope {
+  fill: #757575;
+}
+
+.address-header__icon-phone {
+  fill: #757575;
+}

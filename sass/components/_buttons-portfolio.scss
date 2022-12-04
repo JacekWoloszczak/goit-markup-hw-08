@@ -1,0 +1,45 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+}
+.gallery__buttons {
+  display: flex;
+  justify-content: center;
+}
+.gallery__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery__buttons .gallery__list-btn {
+  list-style-type: none;
+}
+
+.gallery__btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-right: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 22px;
+}
+.gallery__btn {
+  transition-property: color;
+  transition-property: background-color;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery__btn:hover {
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

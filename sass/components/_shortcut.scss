@@ -1,0 +1,47 @@
+ul,
+.address-footer__list,
+.address-footer__list,
+.gallery__list,
+.address-header__info,
+.navigation__menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.page-images__head,
+.primar-container__head,
+.modal__head,
+.team__head,
+.team__head-name,
+.picture__head,
+.footer-social-links__head,
+.newsletter__head,
+.primary-text__lorem_head {
+  margin: 0;
+  padding: 0;
+}
+p,
+.page-images__paragraph,
+.primary-text__paragraph,
+.picture__paragraph,
+.picture__description {
+  margin: 0;
+  padding: 0;
+}
+.backdrop {
+  position: fixed;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform 250ms;
+  z-index: 2;
+}
+.is-hidden {
+  transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

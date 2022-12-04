@@ -1,0 +1,211 @@
+.down-of-pages {
+  background-color: #2f303a;
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.address-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.address-footer__list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: white;
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+
+  padding: 60px 0;
+}
+
+.footer-social-links__head {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  margin-left: 35px;
+  margin-top: -30px;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.footer-social-links__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin-left: 29px;
+}
+
+.footer-social-links__link:hover {
+  background-color: #2196f3;
+}
+.footer-social-links__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social-links__icon {
+  fill: white;
+}
+
+.footer-social-links__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-top: 16px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-footer__list .address-footer__list-item:nth-child(1) {
+  margin-top: 20px;
+}
+.address-footer__list .address-footer__list-item:nth-child(2) {
+  margin-top: 9px;
+}
+
+.address-footer__list .address-footer__list-item:nth-child(3) {
+  margin-top: 9px;
+}
+
+.address-footer__link-mail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-footer__link-phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer_link {
+  display: flex;
+  text-decoration: none;
+}
+
+.footer__span-bottom--primary {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.footer__span-bottom--secondary {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: white;
+}
+
+.newsletter__label {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter__head {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  width: 207px;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  margin-top: -70px;
+  margin-left: 78px;
+}
+.newsletter__input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 385px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: #2f303a;
+  padding: 0;
+  padding-left: 16px;
+  margin-left: -205px;
+  margin-top: 15px;
+  color: white;
+}
+.newsletter__btn-newsletter {
+  background-color: #2196f3;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  padding-right: 72px;
+  padding-left: 42px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: white;
+  border: none;
+  margin-top: 15px;
+  margin-left: 12px;
+
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter__icon {
+  position: absolute;
+  fill: white;
+  right: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
