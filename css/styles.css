@@ -79,7 +79,9 @@ p,
   border: none;
   cursor: pointer;
 }
-
+.d-none {
+  display: none;
+}
 .page-header__logo-hamburger {
   display: none;
   position: absolute;
@@ -98,6 +100,7 @@ p,
   justify-content: flex-start;
   height: 31px;
 }
+
 .page-header__logo-link {
   display: flex;
   text-decoration: none;
@@ -1558,5 +1561,42 @@ p,
 
   .inner-section {
     padding: 0px;
+  }
+  .page-header__menu-mobile {
+    width: 480px;
+    height: 796px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+
+  .page-header__exit-btn {
+    display: flex;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: 21px;
+    right: 25px;
+    background-image: url(../images/close.svg);
+    background-size: contain;
+    background-color: white;
+    border: none;
+  }
+  .d-none {
+    display: none;
+  }
+
+  .page-header__list-item {
+  }
+
+  .page-header__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: #212121;
   }
 }
