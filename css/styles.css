@@ -5,6 +5,12 @@ body {
   padding: 0;
 }
 
+:root {
+  --mobil: 480px;
+  --tablet: 768px;
+  --desktop: 1200px;
+}
+
 ul,
 .address-footer__list,
 .address-footer__list,
@@ -63,8 +69,25 @@ p,
   justify-content: space-between;
   height: 79px;
   border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.page-header__mobile-btn {
+  display: none;
+  position: absolute;
+  top: 22px;
+  right: 23px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 
+.page-header__logo-hamburger {
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  fill: black;
+}
 .page-header__logo {
   display: flex;
   align-items: center;
@@ -616,6 +639,7 @@ p,
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/primar-picture.jpg");
+
   height: 600px;
   display: flex;
   flex-direction: column;
@@ -660,7 +684,6 @@ p,
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  margin-bottom: 30px;
 }
 
 .container--first-lorem,
@@ -668,6 +691,7 @@ p,
 .container--third-lorem,
 .container--fourth-lorem {
   background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .container--first-lorem {
@@ -1131,4 +1155,158 @@ p,
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #2196f3;
   border: 1px solid #2196f3;
+}
+
+/* ======================Media, mobil========================= */
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 79px;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 24px;
+    height: 23px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .page-header__logo-hamburger {
+    display: block;
+    position: absolute;
+    fill: black;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .address-header {
+    display: none;
+  }
+
+  .primar-container {
+    width: 480px;
+    height: 400px;
+    margin: auto;
+    background: #2f303a;
+    background-image: linear-gradient(
+        rgba(36, 37, 44, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/primar-picture.jpg");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primar-container__head {
+    width: 365px;
+    height: 85px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .primary-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .primary-text__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .primary-text__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .primary-text__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container--first-lorem {
+    width: 450px;
+    height: 120px;
+  }
+
+  .container--second-lorem {
+    width: 450px;
+
+    height: 120px;
+  }
+
+  .container--third-lorem {
+    width: 450px;
+    height: 120px;
+  }
+
+  .container--fourth-lorem {
+    width: 450px;
+    height: 120px;
+  }
+  .primary-text__paragraph {
+    text-align: left;
+
+    width: 450px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .primary-text__lorem_head {
+    margin-bottom: 10px;
+  }
+
+  .primary-text__list .primary-text__list-item:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .primary-text__list .primary-text__list-item:nth-child(3) {
+    margin-left: 0;
+  }
+  .primary-text__list .primary-text__list-item:nth-child(4) {
+    margin-left: 0;
+  }
 }
