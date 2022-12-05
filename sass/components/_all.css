@@ -1248,11 +1248,11 @@ p,
   }
   .primar-container {
     width: 1200px;
-    height: 600;
+    height: 600px;
     margin: 0 auto;
     background: #2f303a;
     background-image: linear-gradient(rgba(36, 37, 44, 0.4), rgba(47, 48, 58, 0.4)), url("/images/primar-picture.jpg");
-    background-size: 1200px 600;
+    background-size: 1200px 600px;
   }
   .primar-container__head {
     margin: 0 auto;

@@ -1188,14 +1188,14 @@ p,
 }
 
 /* =======================LAPTOP============================== */
-@media screen and(min-width: 1200px) and (max-width: 1599px) {
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
   .container {
     max-width: 1200px;
   }
 
   .primar-container {
     width: 1200px;
-    height: 600;
+    height: 600px;
     margin: 0 auto;
     background: #2f303a;
     background-image: linear-gradient(
@@ -1203,7 +1203,7 @@ p,
         rgba(47, 48, 58, 0.4)
       ),
       url("/images/primar-picture.jpg");
-    background-size: 1200px 600;
+    background-size: 1200px 600px;
   }
 
   .primar-container__head {
