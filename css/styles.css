@@ -1215,7 +1215,8 @@ p,
 
   .primar-container__head {
     margin: 0 auto;
-
+    width: 365px;
+    height: 84px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.61;
@@ -1223,6 +1224,25 @@ p,
 
     color: #ffffff;
   }
+
+  .primar-container {
+    width: 768px;
+    height: 400px;
+    margin: auto;
+    background: #2f303a;
+    background-image: linear-gradient(
+        rgba(36, 37, 44, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/primar-picture.jpg");
+    background-size: 768px 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* ========================Obrazy=========================== */
   .page-images__head {
     display: none;
@@ -1230,6 +1250,100 @@ p,
 
   .page-images__list {
     display: none;
+  }
+
+  /* =============================TABLET LOREM====================== */
+  .primary-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .primary-text__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .primary-text__list-item {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .primary-text__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 354px;
+    height: 120px;
+  }
+
+  .primary-text__lorem_head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+  }
+
+  .primary-text__list .primary-text__list-item {
+    list-style-type: none;
+  }
+  .primary-text__list .primary-text__list-item:nth-child(2) {
+    margin: auto;
+  }
+
+  .primary-text__list .primary-text__list-item:nth-child(3) {
+    margin: auto;
+  }
+  .primary-text__list .primary-text__list-item:nth-child(4) {
+    margin: auto;
+  }
+  .primary-text__paragraph {
+    text-align: justify;
+    flex-direction: row;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0;
+    width: 354px;
+    height: 75px;
+  }
+
+  /* =============================TABLET CLIENTS===================== */
+  .clients__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .clients__link {
+    display: inline-flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 226px;
+    height: 92px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 /* ======================Media, mobil========================= */
