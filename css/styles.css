@@ -1193,28 +1193,14 @@ p,
     width: 100vw;
   }
 
-  .page-header__container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 79px;
-    border-bottom: 1px solid #ececec;
+  .page-images__head {
+    display: none;
   }
 
-  .primar-container {
-    width: 768px;
-    height: 400px;
-
-    background-image: linear-gradient(
-        rgba(36, 37, 44, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/Header-tablet.png");
-    background-size: cover;
+  .page-images__list {
+    display: none;
   }
 }
-
 /* ======================Media, mobil========================= */
 @media screen and (max-width: 480px) {
   body {
@@ -1268,6 +1254,9 @@ p,
   .address-header {
     display: none;
   }
+
+  /* ============================LOREM======================= */
+
   /* ===========================INDEX================================= */
   .primar-container {
     width: 480px;
