@@ -2036,7 +2036,7 @@ p,
     height: 19px;
     top: 21px;
     right: 25px;
-    background-image: white;
+    background-color: white;
     border: none;
     cursor: pointer;
   }
@@ -2045,6 +2045,7 @@ p,
     position: absolute;
     top: 21px;
     right: 25px;
+    fill: black;
   }
 
   .page-header__exit-icon:hover {
@@ -2563,8 +2564,14 @@ p,
   .inner-section {
     padding: 0px;
   }
+
   .page-header__menu-mobile {
     width: 480px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
     background-color: white;
@@ -2585,14 +2592,19 @@ p,
     height: 19px;
     top: 21px;
     right: 25px;
-    background-image: url(../images/close.svg);
-    background-size: contain;
+
     background-color: white;
     border: none;
     cursor: pointer;
   }
+  .page-header__exit-btn .page-header__exit {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+    fill: black;
+  }
 
-  .page-header__exit-btn:hover {
+  .page-header__exit-icon:hover {
     fill: #2196f3;
   }
   .d-none {
