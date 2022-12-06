@@ -1275,7 +1275,7 @@ p,
   }
 
   .primar-container {
-    width: 768px;
+    width: 1199px;
     height: 400px;
     margin: auto;
     background: #2f303a;
@@ -1284,7 +1284,7 @@ p,
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/primar-picture.jpg");
-    background-size: 768px 400px;
+    background-size: 1199px 400px;
 
     display: flex;
     flex-direction: column;
@@ -1687,7 +1687,7 @@ p,
   /* ===========================INDEX================================= */
   .primar-container {
     width: 480px;
-    height: 400px;
+    height: 796px;
     margin: auto;
     background: #2f303a;
     background-image: linear-gradient(
@@ -1695,7 +1695,7 @@ p,
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/Header-480.png");
-    background-size: cover;
+    background-size: 480px 796px;
 
     display: flex;
     flex-direction: column;
@@ -2012,6 +2012,7 @@ p,
   .page-header__menu-mobile {
     width: 480px;
     position: fixed;
+    height: 100%;
     top: 0;
     left: 0;
 
@@ -2035,14 +2036,18 @@ p,
     height: 19px;
     top: 21px;
     right: 25px;
-    background-image: url(../images/close.svg);
-    background-size: contain;
-    background-color: white;
+    background-image: white;
     border: none;
     cursor: pointer;
   }
 
-  .page-header__exit-btn:hover {
+  .page-header__exit-btn .page-header__exit {
+    position: absolute;
+    top: 21px;
+    right: 25px;
+  }
+
+  .page-header__exit-icon:hover {
     fill: #2196f3;
   }
   .d-none {
@@ -2060,6 +2065,7 @@ p,
 
   .page-header__menu-mobile-list .page-header__list-item:nth-child(1) {
     margin-left: 40px;
+    margin-top: 48px;
     padding-bottom: 32px;
   }
 
@@ -2233,7 +2239,7 @@ p,
   }
   /* ===========================INDEX================================= */
   .primar-container {
-    width: 768px;
+    width: 767px;
     height: 400px;
     margin: auto;
     background: #2f303a;
@@ -2241,8 +2247,8 @@ p,
         rgba(36, 37, 44, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/Header-480.png");
-    background-size: cover;
+      url("../images/Header-tablet.png");
+    background-size: 767px 400px;
 
     display: flex;
     flex-direction: column;
