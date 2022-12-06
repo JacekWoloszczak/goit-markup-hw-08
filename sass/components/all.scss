@@ -82,6 +82,7 @@ p,
 .d-none {
   display: none;
 }
+
 .page-header__logo-hamburger {
   display: none;
   position: absolute;
@@ -2622,6 +2623,7 @@ p,
 
   .page-header__menu-mobile-list .page-header__list-item:nth-child(1) {
     margin-left: 40px;
+    margin-top: 48px;
     padding-bottom: 32px;
   }
 

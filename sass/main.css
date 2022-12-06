@@ -2513,6 +2513,7 @@ p,
   }
   .page-header__menu-mobile-list .page-header__list-item:nth-child(1) {
     margin-left: 40px;
+    margin-top: 48px;
     padding-bottom: 32px;
   }
   .page-header__menu-mobile-list .page-header__list-item:nth-child(2) {
