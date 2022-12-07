@@ -670,7 +670,7 @@ p,
 
 /* ======================INDEX================================ */
 .primar-container {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   background: #2f303a;
   background-image: linear-gradient(rgba(36, 37, 44, 0.4), rgba(47, 48, 58, 0.4)), url("../images/primar-picture.jpg");
@@ -866,7 +866,8 @@ p,
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
   color: #212121;
 }
 
@@ -1015,6 +1016,8 @@ p,
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .clients__list {
@@ -1241,18 +1244,23 @@ p,
   border: 1px solid #2196f3;
 }
 
-/* dupa=======================LAPTOP============================== */
+/* =======================LAPTOP============================== */
 @media screen and (min-width: 1200px) and (max-width: 1599px) {
   .container {
-    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
   }
   .primar-container {
-    width: 1600;
+    max-width: 1599px;
     height: 600px;
     margin: 0 auto;
     background: #2f303a;
     background-image: linear-gradient(rgba(36, 37, 44, 0.4), rgba(47, 48, 58, 0.4)), url("../images/primar-picture.jpg");
-    background-size: cover;
+    background-size: 1599px 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .primar-container__head {
     margin: 0 auto;
@@ -1284,7 +1292,8 @@ p,
 /* ======================TABLET=========================== */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    width: 100vw;
+    width: 100%;
+    margin: 0 auto;
   }
   .address-header__info {
     display: flex;
@@ -1316,12 +1325,13 @@ p,
     color: #ffffff;
   }
   .primar-container {
-    width: 1199px;
+    max-width: 1199px;
     height: 400px;
     margin: auto;
     background: #2f303a;
     background-image: linear-gradient(rgba(36, 37, 44, 0.4), rgba(47, 48, 58, 0.4)), url("../images/primar-picture.jpg");
     background-size: 1199px 400px;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1340,7 +1350,14 @@ p,
   .page-images__list {
     display: none;
   }
+  .inner-section {
+    padding: 0px;
+  }
   /* =============================TABLET LOREM====================== */
+  .inner-section__no-pad-bottom {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
   .primary-text {
     display: flex;
     align-items: center;
@@ -1401,7 +1418,7 @@ p,
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    margin: 0;
+    margin-bottom: 30px;
     width: 354px;
     height: 75px;
   }
@@ -1634,7 +1651,7 @@ p,
 }
 
 /* ======================Media, mobil========================= */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   body {
     display: flex;
     flex-direction: column;
@@ -1642,7 +1659,8 @@ p,
     justify-content: center;
   }
   .container {
-    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
   }
   .page-header__container {
     display: flex;
@@ -1685,12 +1703,13 @@ p,
   /* ============================LOREM======================= */
   /* ===========================INDEX================================= */
   .primar-container {
-    width: 480px;
+    max-width: 479px;
     height: 796px;
     margin: auto;
     background: #2f303a;
     background-image: linear-gradient(rgba(36, 37, 44, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-480.png");
-    background-size: 480px 796px;
+    background-size: 479px 796px;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1915,7 +1934,7 @@ p,
   .newsletter__input {
     align-items: center;
     justify-content: center;
-    width: 450px;
+    max-width: 450px;
     margin: auto;
     margin-top: 20px;
     color: white;
@@ -1982,7 +2001,7 @@ p,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 1;
     margin: auto;
   }
@@ -2127,7 +2146,7 @@ p,
 }
 
 /* =========================MOBILE TWO=========================== */
-@media screen and (min-width: 481px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   body {
     display: flex;
     flex-direction: column;
@@ -2135,7 +2154,8 @@ p,
     justify-content: center;
   }
   .container {
-    max-width: 100vw;
+    width: 100%;
+    margin: 0 auto;
   }
   .page-header__container {
     display: flex;
@@ -2177,12 +2197,13 @@ p,
   }
   /* ===========================INDEX================================= */
   .primar-container {
-    width: 767px;
+    max-width: 767px;
     height: 400px;
     margin: auto;
     background: #2f303a;
     background-image: linear-gradient(rgba(36, 37, 44, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Header-tablet.png");
     background-size: 767px 400px;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2473,7 +2494,7 @@ p,
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     z-index: 1;
     margin: auto;
   }
@@ -2614,5 +2635,11 @@ p,
   }
   .modal__textarea {
     width: 370px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .primar-container {
+    background-image: url("/images/primar-picture.jpg");
   }
 }
