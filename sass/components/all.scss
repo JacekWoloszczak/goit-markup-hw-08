@@ -973,7 +973,7 @@ p,
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  margin-top: 60px;
+
   margin-bottom: 30px;
 }
 .clients__list {
@@ -1395,7 +1395,10 @@ p,
     height: 75px;
   }
   /* ==========================TABLET TEAMS====================== */
-
+  .inner-section__team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .team__list {
     display: flex;
     flex-direction: row;
@@ -1472,8 +1475,8 @@ p,
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .inner-section__clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   /* ======================TABLET STOPKA============================ */
 
@@ -1705,6 +1708,11 @@ p,
   /* ============================LOREM======================= */
 
   /* ===========================INDEX================================= */
+  .inner-section__no-pad-bottom {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+
   .primar-container {
     max-width: 479px;
     height: 796px;
@@ -1817,6 +1825,12 @@ p,
     display: none;
   }
   /* ====================MOBILE TEMS=========================== */
+
+  .inner-section__team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .team__list {
     display: flex;
     flex-direction: column;
@@ -1887,8 +1901,8 @@ p,
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .inner-section__clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   /* ==========================MOBILE FOOTER============================ */
   .down-of-pages {
@@ -2098,7 +2112,7 @@ p,
 
   .page-header__menu-mobile-list .page-header__list-item:nth-child(3) {
     margin-left: 40px;
-    padding-bottom: 306px;
+    margin-bottom: 302px;
   }
   .page-header__link {
     font-weight: 500;
@@ -2114,52 +2128,55 @@ p,
     color: #2196f3;
   }
 
-  .page-header__adress {
+  .page-header__address-social-container {
     display: flex;
     flex-direction: column;
+
     align-items: flex-start;
     justify-content: center;
-  }
-  .page-header__adress:first-child {
-    padding-bottom: 32px;
-  }
-  .page-header__adress:nth-child(2) {
-    padding-bottom: 60px;
+    margin-left: 40px;
+    padding-bottom: 98px;
   }
 
-  .page-header__link-phone {
+  .page-header__address {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .page-header__address-list-item:first-child {
+    padding-bottom: 32px;
+  }
+
+  .page-header__address .page-header__link-phone {
     font-weight: 500;
+
     font-size: 34px;
     line-height: 1.7;
-    margin-left: 40px;
+    margin-bottom: 32px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #2196f3;
-    padding-bottom: 32px;
   }
 
-  .page-header__link-mail {
+  .page-header__address .page-header__link-mail {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    margin-left: 40px;
+    padding-top: 32px;
     text-decoration: none;
     color: #757575;
-    padding-bottom: 60px;
   }
-
   .page-header__social-links {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 64px;
+    margin-bottom: 48px;
   }
-  .page-header__social-item {
-    display: inline;
-    margin-left: 40px;
-    padding-bottom: 48px;
-  }
+
   .page-header__social-item:nth-child(2) {
     margin-left: 10px;
   }
@@ -2261,6 +2278,11 @@ p,
     display: none;
   }
   /* ===========================INDEX================================= */
+  .inner-section__no-pad-bottom {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+
   .primar-container {
     max-width: 767px;
     height: 400px;
@@ -2373,6 +2395,11 @@ p,
     display: none;
   }
   /* ====================MOBILE TEMS=========================== */
+  .inner-section__team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .team__list {
     display: flex;
     flex-direction: column;
@@ -2444,8 +2471,8 @@ p,
   }
 
   .inner-section__clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   /* ==========================MOBILE FOOTER============================ */
   .down-of-pages {
@@ -2765,10 +2792,11 @@ p,
   }
 }
 // =========================RETINA==========================
-@media (min-device-pixel-ratio: 2),
+@media not all,
+  (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .primar-container {
-    background-image: url("/images/primar-picture.jpg");
+    background-image: url("../images/primar-picture.jpg");
   }
 }
