@@ -1208,7 +1208,8 @@ p,
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/primar-picture.jpg");
-    background-size: 1599px 600px;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1294,8 +1295,8 @@ p,
         rgba(36, 37, 44, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/primar-picture.jpg");
-    background-size: 1199px 400px;
+      url("/images/primar-picture.jpg");
+    background-size: cover;
     background-position: center;
 
     display: flex;
@@ -1428,12 +1429,28 @@ p,
     background-image: url(../images/men-tablet.png);
     background-size: 354px 374px;
   }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--glass {
+      background-image: url("../images/men.jpg");
+    }
+  }
 
   .retina--women {
     width: 354px;
     height: 374px;
     background-image: url(../images/women-tablet.png);
     background-size: 354px 374px;
+  }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--women {
+      background-image: url("../images/women.jpg");
+    }
   }
 
   .retina--men {
@@ -1442,12 +1459,28 @@ p,
     background-image: url(../images/men-without-glass-tablet.png);
     background-size: cover;
   }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--men {
+      background-image: url("../images/men-without-glass.jpg");
+    }
+  }
 
   .retina--ux {
     width: 354px;
     height: 374px;
     background-image: url(../images/UX-tablet.png);
     background-size: 354px 374px;
+  }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--ux {
+      background-image: url("/images/UX.jpg");
+    }
   }
 
   /* =============================TABLET CLIENTS===================== */
@@ -1855,12 +1888,28 @@ p,
     background-image: url(../images/men-480.png);
     background-size: 450px 460px;
   }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--glass {
+      background-image: url("../images/men-tablet.png");
+    }
+  }
 
   .retina--women {
     width: 450px;
     height: 460px;
     background-image: url(../images/Women-480.png);
     background-size: 450px 460px;
+  }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--woman {
+      background-image: url("../images/women-tablet.png");
+    }
   }
 
   .retina--men {
@@ -1869,6 +1918,14 @@ p,
     background-image: url(../images/men-without-glass-480.png);
     background-size: 450px 460px;
   }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--men {
+      background-image: url("../images/men-without-glass-tablet.png");
+    }
+  }
 
   .retina--ux {
     width: 450px;
@@ -1876,6 +1933,16 @@ p,
     background-image: url(../images/UX-480.png);
     background-size: 450px 460px;
   }
+
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--ux {
+      background-image: url("../images/UX-tablet.png");
+    }
+  }
+
   /* ============================Mobile CLIENTS======================== */
   .clients__list {
     display: flex;
@@ -2284,7 +2351,7 @@ p,
   }
 
   .primar-container {
-    max-width: 480px;
+    max-width: 767px;
     height: 400px;
     margin: auto;
     background: #2f303a;
@@ -2293,7 +2360,7 @@ p,
         rgba(47, 48, 58, 0.4)
       ),
       url("../images/Header-tablet.png");
-    background-size: 767px 400px;
+    background-size: cover;
     background-position: center;
 
     display: flex;
@@ -2425,18 +2492,43 @@ p,
     background-size: 450px 460px;
   }
 
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--glass {
+      background-image: url("../images/men-tablet.png");
+    }
+  }
+
   .retina--women {
     width: 450px;
     height: 460px;
     background-image: url(../images/Women-480.png);
     background-size: 450px 460px;
   }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--women {
+      background-image: url("../images/women-tablet.png");
+    }
+  }
 
   .retina--men {
     width: 450px;
     height: 460px;
-    background-image: url(../images/men-without-glass-480.png);
+    background-image: url("../images/men-without-glass-480.png");
     background-size: 450px 460px;
+  }
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--men {
+      background-image: url("../images/men-without-glass-tablet.png");
+    }
   }
 
   .retina--ux {
@@ -2445,6 +2537,16 @@ p,
     background-image: url(../images/UX-480.png);
     background-size: 450px 460px;
   }
+
+  @media not all,
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .retina--ux {
+      background-image: url("../images/UX-tablet.png");
+    }
+  }
+
   /* ============================Mobile CLIENTS======================== */
   .clients__list {
     display: flex;
