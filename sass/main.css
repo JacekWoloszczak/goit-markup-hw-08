@@ -1201,8 +1201,8 @@ p,
 
 .modal__icon--check {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 1px;
+  left: 0px;
   fill: white;
 }
 
