@@ -866,7 +866,6 @@ p,
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  margin-top: 60px;
   margin-bottom: 30px;
   color: #212121;
 }
@@ -1204,6 +1203,10 @@ p,
   top: 1px;
   left: 0px;
   fill: white;
+}
+
+.modal__checkbox-input:disabled {
+  background-color: #ffffff;
 }
 
 .modal__checkbox-input:checked + .modal__label-checkbox > .modal__checkbox {
@@ -1687,6 +1690,14 @@ p,
   }
   .modal__textarea {
     width: 370px;
+  }
+  .modal__label-checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .modal__checkbox {
+    margin-left: -10px;
   }
 }
 
@@ -2224,6 +2235,14 @@ p,
   .modal__textarea {
     width: 370px;
   }
+  .modal__label-checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .modal__checkbox {
+    margin-left: -10px;
+  }
 }
 
 /* =========================MOBILE TWO=========================== */
@@ -2757,6 +2776,14 @@ p,
   }
   .modal__textarea {
     width: 370px;
+  }
+  .modal__label-checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .modal__checkbox {
+    margin-left: -10px;
   }
 }
 
