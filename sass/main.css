@@ -1970,7 +1970,7 @@ p,
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   /* ============================Mobile CLIENTS======================== */
 
   .clients__list {
@@ -2134,7 +2134,7 @@ p,
     padding: 0px;
   }
   .page-header__menu-mobile {
-    width: 480px;
+    width: 90%;
     position: fixed;
     height: 100%;
     top: 0;
